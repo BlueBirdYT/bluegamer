@@ -93,65 +93,51 @@ async def on_reaction_add(reaction, user):
            embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
            embed.set_author(name='Help2')            
            embed.set_image(url = 'https://image.ibb.co/caM2BK/help.gif')    
-           embed.add_field(name = 'n!addrole (admin is required)', value ='n!addrole (name)',inline = False)
-           embed.add_field(name = 'n!delrole (admin is required)', value =' n!delrole (rolename)',inline = False)
-           embed.add_field(name = 'n!setnick (admin is required)', value ='n!setnick @user (name)',inline = False)
-           embed.add_field(name = 'n!purge (mod or admin is required)', value =' n!purge (number)',inline = False)
-           embed.add_field(name = 'n!ban (mod or admin is required)', value ='n!ban @user',inline = False)
-           embed.add_field(name = 'n!unban (mod or admin is required)', value ='n!unban @user',inline = False)
-           embed.add_field(name = 'n!bans (admin is required)', value =' n!bans',inline = False)
-           embed.add_field(name = 'n!serverinfo', value =' n!serverinfo',inline = False)
-           embed.add_field(name = 'n!membercount(admin is required)', value ='n!membercount',inline = False)
-           embed.add_field(name = 'n!happybday', value ='n!happybday to send a happy birthday message to someone',inline = False)            
-           embed.add_field(name = 'n!slap', value ='n!slap @user',inline = False)
-           embed.add_field(name = 'n!damn', value ='gif command',inline = False)
-           embed.add_field(name = 'n!burned', value ='gif command',inline = False)
-           embed.add_field(name = 'n!savage', value ='gif command',inline = False)
-           embed.add_field(name = 'n!thuglife', value ='gif command',inline = False)
-           embed.add_field(name = 'n!google', value ='n!google (name)',inline = False)
-           embed.add_field(name = 'n!rps', value ='n!rps (rock,paper,scissors) choose one',inline = False)
-           embed.add_field(name = 'n!kick (mod or admin is required', value ='n!kick @user',inline = False)
-           embed.add_field(name = 'n!kiss', value ='n!kiss @user',inline = False)
-           embed.add_field(name = 'n!hug', value ='n!hug @user',inline = False)
-           embed.add_field(name = 'n!joke', value ='n!joke',inline = False)
-           embed.add_field(name = 'n!rolldice', value ='n!rolldice (1 -6) choose one',inline = False)
+           embed.add_field(name = 'a!addrole (admin is required)', value ='a!addrole (name)',inline = False)
+           embed.add_field(name = 'a!delrole (admin is required)', value =' a!delrole (rolename)',inline = False)
+           embed.add_field(name = 'a!setnick (admin is required)', value ='a!setnick @user (name)',inline = False)
+           embed.add_field(name = 'a!purge (mod or admin is required)', value =' a!purge (number)',inline = False)
+           embed.add_field(name = 'a!ban (mod or admin is required)', value ='a!ban @user',inline = False)
+           embed.add_field(name = 'a!unban (mod or admin is required)', value ='a!unban @user',inline = False)
+           embed.add_field(name = 'a!bans (admin is required)', value =' a!bans',inline = False)
+           embed.add_field(name = 'a!serverinfo', value =' a!serverinfo',inline = False)
+           embed.add_field(name = 'a!membercount(admin is required)', value ='a!membercount',inline = False)
+           embed.add_field(name = 'a!happybday', value ='a!happybday to send a happy birthday message to someone',inline = False)            
+           embed.add_field(name = 'a!slap', value ='a!slap @user',inline = False)
+           embed.add_field(name = 'a!damn', value ='gif command',inline = False)
+           embed.add_field(name = 'a!burned', value ='gif command',inline = False)
+           embed.add_field(name = 'a!savage', value ='gif command',inline = False)
+           embed.add_field(name = 'a!thuglife', value ='gif command',inline = False)
+           embed.add_field(name = 'a!google', value ='a!google (name)',inline = False)
+           embed.add_field(name = 'a!rps', value ='a!rps (rock,paper,scissors) choose one',inline = False)
+           embed.add_field(name = 'a!kick (mod or admin is required', value ='a!kick @user',inline = False)
+           embed.add_field(name = 'a!kiss', value ='a!kiss @user',inline = False)
+           embed.add_field(name = 'a!hug', value ='a!hug @user',inline = False)
+           embed.add_field(name = 'a!joke', value ='a!joke',inline = False)
+           embed.add_field(name = 'a!rolldice', value ='a!rolldice (1 -6) choose one',inline = False)
            await client.send_message(user,embed=embed)
      if reaction.emoji == '🎦':
            r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
            embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
            embed.set_author(name='Help3')
            embed.set_image(url = 'https://image.ibb.co/caM2BK/help.gif')    
-           embed.add_field(name = 'n!invite', value ='n!invite',inline = False)
-           embed.add_field(name = 'n!say', value ='n!say (msg)',inline = False)
-           embed.add_field(name = 'n!remind', value ='n!remind (time in seconds)',inline = False)
-           embed.add_field(name = 'n!mention (admin is required)', value ='n!mention (rolename) (msg if you want)',inline = False)
-           embed.add_field(name = 'n!ownerinfo', value ='n!ownerinfo',inline = False)
-           embed.add_field(name = 'n!poll', value =' type n!poll and it will send a message of how to use poll',inline = False)
-           embed.add_field(name = 'n!server', value ='n!server to get link to the support server',inline = False)
-           embed.add_field(name = 'n!play', value ='n!play (url or name)',inline = False)
-           embed.add_field(name = 'n!stop', value ='n!stop to stop the music',inline = False)
-           embed.add_field(name = 'n!queue', value ='n!queue to see the queue',inline = False)
-           embed.add_field(name = 'n!np', value ='n!np to see the current song',inline = False)
-           embed.add_field(name = 'n!volume', value ='n!volume or n!volume (sound amount)',inline = False)
-           embed.add_field(name = 'n!pause', value ='n!pause',inline = False)
-           embed.add_field(name = 'n!resume', value ='n!resume',inline = False)
-           embed.add_field(name = 'n!skip', value ='n!skip to skip the current song',inline = False)
-           embed.add_field(name = 'n!movie', value ='n!movie (movie name)',inline = False)
+           embed.add_field(name = 'a!invite', value ='a!invite',inline = False)
+           embed.add_field(name = 'a!say', value ='a!say (msg)',inline = False)
+           embed.add_field(name = 'a!remind', value ='a!remind (time in seconds)',inline = False)
+           embed.add_field(name = 'a!mention (admin is required)', value ='a!mention (rolename) (msg if you want)',inline = False)
+           embed.add_field(name = 'a!ownerinfo', value ='a!ownerinfo',inline = False)
+           embed.add_field(name = 'a!poll', value =' type a!poll and it will send a message of how to use poll',inline = False)
+           embed.add_field(name = 'a!server', value ='a!server to get link to the support server',inline = False)
+           embed.add_field(name = 'a!play', value ='a!play (url or name)',inline = False)
+           embed.add_field(name = 'a!stop', value ='a!stop to stop the music',inline = False)
+           embed.add_field(name = 'a!queue', value ='a!queue to see the queue',inline = False)
+           embed.add_field(name = 'a!np', value ='a!np to see the current song',inline = False)
+           embed.add_field(name = 'a!volume', value ='a!volume or n!volume (sound amount)',inline = False)
+           embed.add_field(name = 'a!pause', value ='a!pause',inline = False)
+           embed.add_field(name = 'a!resume', value ='a!resume',inline = False)
+           embed.add_field(name = 'a!skip', value ='a!skip to skip the current song',inline = False)
+           embed.add_field(name = 'a!movie', value ='a!movie (movie name)',inline = False)
            await client.send_message(user,embed=embed)
-     if reaction.emoji == '⏭':
-        r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
-        embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
-        embed.set_author(name='economy Help')
-        embed.set_image(url = 'https://image.ibb.co/caM2BK/help.gif')
-        embed.add_field(name = 'n!daily', value ='get daily rewards',inline = False)
-        embed.add_field(name = 'n!bal', value ='check your balance',inline = False)
-        embed.add_field(name = 'n!dice', value ='roll a dice',inline = False)
-        embed.add_field(name = 'n!coinflip', value ='flip a coin',inline = False)
-        embed.add_field(name = 'n!transfer', value ='transfer money to a user',inline = False)
-        embed.add_field(name = 'n!lb', value ='check leaderboard',inline = False)
-        embed.add_field(name = 'n!work', value ='work for money',inline = False)
-        await client.send_message(user,embed=embed)    
-     
      for channel in user.server.channels:
         if channel.name == 'server-log':
             logchannel = channel
@@ -181,7 +167,7 @@ async def on_reaction_add(reaction, user):
         
         
 def is_owner(ctx):
-     return ctx.message.author.id in ["455322915471097857","488271857561239572","485403000257642496"]
+     return ctx.message.author.id in ["455322915471097857","488271857561239572"]
 
 
     
@@ -272,7 +258,7 @@ async def unlock(ctx, channelname: discord.Channel=None):
 @client.command(pass_context = True)
 async def dm(ctx, user: discord.Member, *, msg: str):
    if user is None or msg is None:
-       await client.say('Invalid args. Use this command like: ``n!dm @user message``')
+       await client.say('Invalid args. Use this command like: ``a!dm @user message``')
    if ctx.message.author.server_permissions.administrator == False:
        await client.say('**You do not have permission to use this command**')
        return
@@ -310,7 +296,7 @@ async def setuplog(ctx):
 @client.command(pass_context=True)
 async def getuser(ctx, role: discord.Role = None):
     if role is None:
-        await client.say('Please tag a role to get users having it. Example- ``n!getuser @role``')
+        await client.say('Please tag a role to get users having it. Example- ``a!getuser @role``')
         return
     if ctx.message.author.server_permissions.kick_members == False:
        await client.say('**You do not have permission to use this command**')
@@ -326,7 +312,7 @@ async def getuser(ctx, role: discord.Role = None):
 @client.command(pass_context = True)
 async def userinfo(ctx, user: discord.Member=None):
     if user is None:
-      await client.say('Please tag a user to get user information. Example- ``n!userinfo @user``')
+      await client.say('Please tag a user to get user information. Example- ``a!userinfo @user``')
     if ctx.message.author.bot:
       return
     if ctx.message.author.server_permissions.kick_members == False:
@@ -365,10 +351,10 @@ async def roleinfo(ctx,*, role:discord.Role=None):
 @client.command(pass_context = True)
 async def rolecolor(ctx, role:discord.Role=None, value:str=None):
     if discord.utils.get(ctx.message.server.roles, name="{}".format(role)) is None:
-        await client.say("Use this command like ``n!rolecolor (ROLENAME) (ROLECOLOUR IN HEXCODE)``")
+        await client.say("Use this command like ``a!rolecolor (ROLENAME) (ROLECOLOUR IN HEXCODE)``")
         return
     if value is None:
-        await client.say("Use this command like ``n!rolecolor (ROLENAME) (ROLECOLOUR IN HEXCODE)``")
+        await client.say("Use this command like ``a!rolecolor (ROLENAME) (ROLECOLOUR IN HEXCODE)``")
         return
     if ctx.message.author.server_permissions.manage_roles == False:
         await client.say('**You do not have permission to use this command**')
@@ -400,7 +386,7 @@ async def role(ctx, user: discord.Member=None, *, role: discord.Role = None):
 @commands.has_permissions(kick_members=True)
 async def warn(ctx, userName: discord.User=None,*, message:str=None):
     if userName is None:
-      await client.say('Please tag a person to warn user. Example- ``n!warn @user <reason>``')
+      await client.say('Please tag a person to warn user. Example- ``a!warn @user <reason>``')
       return
     else:
       await client.send_message(userName, "You have been warned for: **{}**".format(message))
@@ -498,7 +484,7 @@ async def tweet(ctx, usernamename:str, *, txt:str):
 async def announce(ctx, channel: discord.Channel=None, *, msg: str=None):
     member = ctx.message.author
     if channel is None or msg is None:
-        await client.say('Invalid args. Use this command like ``Nannounce #channel text here``')
+        await client.say('Invalid args. Use this command like ``a!announce #channel text here``')
         return
     else:
         if member.server_permissions.administrator == False:
@@ -542,10 +528,10 @@ async def addchannel(ctx, channel: str=None):
 async def mute(ctx, member: discord.Member=None, mutetime=None):
     msgauthor = ctx.message.author
     if member is None:
-        await client.say('Please specify member i.e. Mention a member to mute. Example-``n!mute @user <time in minutes>``')
+        await client.say('Please specify member i.e. Mention a member to mute. Example-``a!mute @user <time in minutes>``')
         return
     if mutetime is None:
-        await client.say('Please specify time i.e. Mention a member to mute with time. Example-``n!mute @user <time in minutes>``')
+        await client.say('Please specify time i.e. Mention a member to mute with time. Example-``a!mute @user <time in minutes>``')
         return
     if member.server_permissions.kick_members:
         await client.say('**You cannot mute admin/moderator!**')
@@ -597,14 +583,14 @@ async def avatar(ctx, user: discord.Member=None):
         r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
         embed = discord.Embed(title=f'Avatar', description='Avatar is profile picture of a user in discord', color = discord.Color((r << 16) + (g << 8) + b))
         embed.add_field(name='User: {}'.format(ctx.message.author.name), value='Avatar:', inline=True)
-        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/546667977181757450/550645098451304458/453b79abdd41725ec9f8dbf22635118a--assassin-game--story.png')
+        embed.set_thumbnail(url='https://cdn.discordapp.com/avatars/538554562726985728/e6468a360d4dd0f62c8f832e539abc6d.webp?size=1024')
         embed.set_image(url = ctx.message.author.avatar_url)
         await client.say(embed=embed)
     else:
         r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
         embed = discord.Embed(title=f'Avatar', description='Avatar is profile picture of a user in discord', color = discord.Color((r << 16) + (g << 8) + b))
         embed.add_field(name='User: {}'.format(user.name), value='Avatar:', inline=True)
-        embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/546667977181757450/550645098451304458/453b79abdd41725ec9f8dbf22635118a--assassin-game--story.png')
+        embed.set_thumbnail(url='https://cdn.discordapp.com/avatars/538554562726985728/e6468a360d4dd0f62c8f832e539abc6d.webp?size=1024')
         embed.set_image(url = user.avatar_url)
         await client.say(embed=embed)
 
@@ -620,7 +606,7 @@ async def flipcoin(ctx):
 @client.command(pass_context = True)
 async def unmute(ctx, member: discord.Member=None):
     if member is None:
-      await client.say('Please specify member i.e. Mention a member to unmute. Example- ``n!unmute @user``')
+      await client.say('Please specify member i.e. Mention a member to unmute. Example- ``a!unmute @user``')
     if ctx.message.author.bot:
       return
     else:
@@ -640,7 +626,7 @@ async def unmute(ctx, member: discord.Member=None):
 @commands.cooldown(rate=5,per=86400,type=BucketType.user)
 async def access(ctx, member: discord.Member=None):
     if member is None:
-      await client.say("Please specify a member to give access to him. Example- ``n!access @user``")
+      await client.say("Please specify a member to give access to him. Example- ``a!access @user``")
     if ctx.message.author.bot:
       return
     if ctx.message.author.server_permissions.kick_members == False:
@@ -689,7 +675,7 @@ async def delrole(ctx,*, role: discord.Role = None):
 @commands.has_permissions(manage_nicknames=True)
 async def setnick(ctx, user: discord.Member=None, *, nickname=None):
     if user is None:
-      await client.say('Please tag a person to change nickname. Example- ``n!setnick @user <new nickname>``')
+      await client.say('Please tag a person to change nickname. Example- ``a!setnick @user <new nickname>``')
       return
     else:
       await client.change_nickname(user, nickname)
@@ -709,7 +695,7 @@ async def purge(ctx, number: int):
 @commands.has_permissions(ban_members=True)
 async def ban(ctx,user:discord.Member=None):
     if user is None:
-      await client.say('Please specify a member to ban. Example- ``n!ban @user``')
+      await client.say('Please specify a member to ban. Example- ``a!ban @user``')
     if user.server_permissions.ban_members:
       await client.say('**He is mod/admin and i am unable to ban him/her**')
       return
@@ -876,7 +862,7 @@ async def rps(ctx, *, message=None):
     embed=discord.Embed(title = "Bot VS {}".format(ctx.message.author.name), color = discord.Color((r << 16) + (g << 8) + b))
     embed.set_author(name = ctx.message.author.name, icon_url = ctx.message.author.avatar_url)
     if message is None:
-        await client.say('Use it like ``n!rps rock or scissors or paper`` anyone of them to make this command work properly')
+        await client.say('Use it like ``a!rps rock or scissors or paper`` anyone of them to make this command work properly')
     if message.lower() != ans[0] and message.lower() != ans[1] and message.lower() != ans[2] :
         return await client.say("Pick Rock Paper or Scissors")
     elif message.lower() == pick:
@@ -961,9 +947,9 @@ async def rolldice(ctx):
 async def invite():
     r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
     embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
-    embed.set_image(url="https://cdn.discordapp.com/attachments/546667977181757450/550645098451304458/453b79abdd41725ec9f8dbf22635118a--assassin-game--story.png")
-    embed.add_field(name = 'Link to invite me', value='https://discordapp.com/api/oauth2/authorize?client_id=487552378497662978&permissions=8&scope=bot')
-    embed.add_field(name = 'bot info', value='NinjaBot is a simple bot easy and fun to use we will do updates and keep improving the bot')
+    embed.set_image(url="https://cdn.discordapp.com/avatars/538554562726985728/e6468a360d4dd0f62c8f832e539abc6d.webp?size=1024")
+    embed.add_field(name = 'link to invite me', value='https://discordapp.com/api/oauth2/authorize?client_id=538554562726985728&permissions=8&scope=bot')
+    embed.add_field(name = 'bot info', value='AssasinBot is a simple bot easy and fun to use we will do updates and keep improving the bot')
     await client.say(embed=embed)
     await client.delete_message(ctx.message)
 
@@ -1072,18 +1058,14 @@ async def help(ctx):
         embed.add_field(name = 'React with 🇲 ',value ='click it to see the commands',inline = False)
         embed.add_field(name = 'React with 🇬 ',value ='click it to see the rest of the commands',inline = False)
         embed.add_field(name = 'React with 🎦 ',value ='click it to see the rest of the commands',inline = False)
-        embed.add_field(name = 'React with 🎦',value ='click it to see economy commands',inline = False)
         embed.add_field(name = 'Thanks to Darklegends',value ='thanks to darklegends he showed the devs how to make reaction help :)',inline = False)
-        embed.add_field(name = 'pls upvote it will be helpful :)',value ='https://discordbots.org/bot/487552378497662978/vote',inline = False)  
         dmmessage = await client.send_message(author,embed=embed)
         reaction1 = '🇲'
         reaction2 = '🇬'
         reaction3 = '🎦'
-        reaction4 = '⏭'
         await client.add_reaction(dmmessage, reaction1)
         await client.add_reaction(dmmessage, reaction2)
         await client.add_reaction(dmmessage, reaction3)
-        await client.add_reaction(dmmessage, reaction4)
         await client.say('📨 Check DMs For Information')
                            
     
@@ -1096,10 +1078,10 @@ async def help(ctx):
 async def devmute(ctx, member: discord.Member=None, mutetime=None):
     msgauthor = ctx.message.author
     if member is None:
-        await client.say('Please specify member i.e. Mention a member to mute. Example-``Ndevmute @user <time in minutes>``')
+        await client.say('Please specify member i.e. Mention a member to mute. Example-`a!devmute @user <time in minutes>``')
         return
     if mutetime is None:
-        await client.say('Please specify time i.e. Mention a member to mute with time. Example-``Ndevmute @user <time in minutes>``')
+        await client.say('Please specify time i.e. Mention a member to mute with time. Example-``a!devmute @user <time in minutes>``')
         return
     if member.server_permissions.kick_members:
         await client.say('**You cannot mute admin/moderator!**')
@@ -1134,7 +1116,7 @@ async def devmute(ctx, member: discord.Member=None, mutetime=None):
 @commands.check(is_owner)
 async def devunmute(ctx, member: discord.Member=None):
     if member is None:
-      await client.say('Please specify member i.e. Mention a member to unmute. Example- ``Ndevunmute @user``')
+      await client.say('Please specify member i.e. Mention a member to unmute. Example- ``a!devunmute @user``')
     if ctx.message.author.bot:
       return
     else:
@@ -1151,7 +1133,7 @@ async def devunmute(ctx, member: discord.Member=None):
 @commands.check(is_owner)
 async def devban(ctx,user:discord.Member=None):
     if user is None:
-      await client.say('Please specify a member to ban. Example- ``Ndevban @user``')
+      await client.say('Please specify a member to ban. Example- ``a!devban @user``')
     if user.server_permissions.ban_members:
       await client.say('**He is mod/admin and i am unable to ban him/her**')
       return
@@ -1182,7 +1164,7 @@ async def devunban(ctx, identification:str):
 @commands.check(is_owner)
 async def devwarn(ctx, userName: discord.User=None,*, message:str=None):
     if userName is None:
-      await client.say('Please tag a person to warn user. Example- ``Ndevwarn @user <reason>``')
+      await client.say('Please tag a person to warn user. Example- ``a!devwarn @user <reason>``')
       return
     else:
       await client.send_message(userName, "You have been warned for: **{}**".format(message))
@@ -1238,20 +1220,19 @@ async def poll(ctx, question, *options: str):
     
 @client.command(pass_context=True)
 async def ownerinfo(ctx):
-    embed = discord.Embed(title="Information about owner", description="Main Creator: Uthsho", color=0x00ff00)
-    embed.set_author(name=" Bot Owner ""Uthsho#0440")
-    embed.add_field(name="Owner: Uthsho#0440", value="He coded the bot")
-    embed.add_field(name="Co-owner: LOLGamerYT ❄ Spearow Collector#7511", value="He helped in testing the bot")
-    embed.set_image(url="https://cdn.discordapp.com/attachments/546667977181757450/550645098451304458/453b79abdd41725ec9f8dbf22635118a--assassin-game--story.png")
-    embed.add_field(name="bot update", value="added economy check n!help for more information")
-    embed.add_field(name="bot info", value="NinjaBot is a bot fun and simple to use we want people to have fun and we will keep improving it as much as we can")
+    embed = discord.Embed(title="Information about owner", description="Main Creator: Shobhit Chauhan#7511", color=0x00ff00)
+    embed.set_author(name=" Bot Owner: Shobhit Chauhan#7511")
+    embed.add_field(name="Co-Owner: Uthsho#0440", value="He coded the bot")
+    embed.set_image(url="https://cdn.discordapp.com/avatars/538554562726985728/e6468a360d4dd0f62c8f832e539abc6d.webp?size=1024")
+    embed.add_field(name="bot update", value="No new updates")
+    embed.add_field(name="bot info", value="AssasinBot is a bot fun and simple to use we want people to have fun and we will keep improving it as much as we can")
     embed.set_thumbnail(url="https://cdn.discordapp.com/avatars/455322915471097857/7968f36ce706617126cd299153de595f.webp?size=1024")
     await client.say(embed=embed)
 
 
 @client.command(pass_context=True)
 async def server(ctx):
-    await client.say('support server: https://discord.gg/GhYX7zU')
+    await client.say('support server: https://discord.gg/A2Ypgw8')
 
    
 @client.command(pass_context = True)
@@ -1270,7 +1251,7 @@ async def sayy(ctx, *, msg = None):
 @commands.check(is_owner)
 async def devkick(ctx,user:discord.Member):
     if user is None:
-      await client.say('Please mention a member to kick. Example- ``Ndevkick @user``')
+      await client.say('Please mention a member to kick. Example- ``a!devkick @user``')
     if user.server_permissions.kick_members:
       await client.say('**He is mod/admin and i am unable to kick him/her**')
       return
@@ -1368,10 +1349,10 @@ async def gifsearch(ctx, *keywords):
 async def on_message(message):
     user_add_xp(message.author.id, 2)
     await client.process_commands(message)
-    if '<@487552378497662978>' in message.content:
-        msg = '**my prefix is n!, Use ``n!help`` for more information!**'.format(message)
+    if '<@538554562726985728>' in message.content:
+        msg = '**my prefix is a!, Use ``a!help`` for more information!**'.format(message)
         msg2 = await client.send_message(message.channel, msg)
-    if message.content.lower().startswith('n!rank'):
+    if message.content.lower().startswith('a!rank'):
         r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
         level=int(get_xp(message.author.id)/100)
         msgs=int(get_xp(message.author.id)/2)
@@ -1383,8 +1364,6 @@ async def on_message(message):
         embed.add_field(name = '**__Messages__**'.format(message.author),value ='``{}`` Messages'.format(msgs),inline = False)
         embed.add_field(name='Note:',value='Our bot reset all ranks everyday so it shows only daily rank')
         await client.send_message(message.channel, embed=embed)    
-    if message.server.id == '552549858557427714':
-        return
     if 'fuck' in message.content:
         msg = 'Do not use bad words {0.author.name}'.format(message)
         msg2 = await client.send_message(message.channel, msg)
