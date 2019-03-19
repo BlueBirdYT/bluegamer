@@ -1221,10 +1221,10 @@ async def poll(ctx, question, *options: str):
 @client.command(pass_context=True)
 async def ownerinfo(ctx):
     embed = discord.Embed(title="Information about owner", description="Main Creator: Shobhit Chauhan#7511", color=0x00ff00)
-    embed.set_author(name=" Bot Owner: Shobhit Chauhan#7511")
+    embed.set_author(name=" Bot Owner: bhit Chauhan#7511")
     embed.add_field(name="Co-Owner: Uthsho#0440", value="He coded the bot")
-    embed.set_image(url="https://cdn.discordapp.com/avatars/538554562726985728/e6468a360d4dd0f62c8f832e539abc6d.webp?size=1024")
     embed.add_field(name="bot update", value="No new updates")
+    embed.set_image(url="https://cdn.discordapp.com/avatars/538554562726985728/e6468a360d4dd0f62c8f832e539abc6d.webp?size=1024")
     embed.add_field(name="bot info", value="AssasinBot is a bot fun and simple to use we want people to have fun and we will keep improving it as much as we can")
     embed.set_thumbnail(url="https://cdn.discordapp.com/avatars/455322915471097857/7968f36ce706617126cd299153de595f.webp?size=1024")
     await client.say(embed=embed)
