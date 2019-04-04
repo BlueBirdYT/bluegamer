@@ -1229,7 +1229,7 @@ async def ownerinfo(ctx):
 
 @client.command(pass_context=True)
 async def server(ctx):
-    await client.say('support server: https://discord.gg/A2Ypgw8')
+    await client.say('support server: https://discord.gg/gaKcPHz')
 
    
 @client.command(pass_context = True)
