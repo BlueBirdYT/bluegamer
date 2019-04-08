@@ -134,6 +134,7 @@ async def on_reaction_add(reaction, user):
            embed.add_field(name = 'a!resume', value ='a!resume',inline = False)
            embed.add_field(name = 'a!skip', value ='a!skip to skip the current song',inline = False)
            embed.add_field(name = 'a!movie', value ='a!movie (movie name)',inline = False)
+           embed.add_field(name = 'a!upvote', value ='a!upvote to get link to upvote',inline = False)
            await client.send_message(user,embed=embed)
      for channel in user.server.channels:
         if channel.name == 'server-log':
@@ -1691,7 +1692,9 @@ async def love(ctx, user: discord.Member = None, *, user2: discord.Member = None
             embed.set_image(url=res['message'])
             await client.say(embed=embed)   		   	   	    
 
-        
+@client.command(pass_context=True)
+async def upvote():
+    await client.say('link to upvote me https://discordbots.org/bot/538554562726985728/vote')
             
             
     
