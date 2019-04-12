@@ -1350,7 +1350,9 @@ async def on_message(message):
     if '<@538554562726985728>' in message.content:
         msg = '**my prefix is a!, Use ``a!help`` for more information!**'.format(message)
         msg2 = await client.send_message(message.channel, msg)
-    if message.content.lower().startswith('a!rank'):
+    if message.server.id == '560515451914813440':
+        return
+        if message.content.lower().startswith('a!rank'):
         r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
         level=int(get_xp(message.author.id)/100)
         msgs=int(get_xp(message.author.id)/2)
